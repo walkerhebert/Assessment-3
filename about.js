@@ -1,5 +1,7 @@
 console.log("hello world");
 
+let form = document.querySelector('#contact');
+let logo = document.querySelector('#logo')
 
 
 function handleSubmit(evt) {
@@ -8,15 +10,14 @@ function handleSubmit(evt) {
 	alert('The form has been successfully submitted.');
 }
 
-const logo = document.querySelector('#logo')
 
-let form = document.querySelector('#contact');
+const hoverCompliment = () => {
+	alert("You so smart")
+}
+
 
 form.addEventListener('submit', handleSubmit);
-
-document.getElementById("logo").addEventListener("mouseover", function( event ) {
-	alert("You so smart");
-  }, false);
+logo.addEventListener('mouseover', hoverCompliment)
 
 
 
